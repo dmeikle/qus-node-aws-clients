@@ -1,0 +1,51 @@
+{
+  "name": "qus-node-aws-clients",
+  "version": "1.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "release": "standard-version",
+    "prepublishOnly": "npm run release && npm run build"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.787.0",
+    "@nestjs/common": "^11.0.9",
+    "@nestjs/core": "^11.0.9",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@nestjs/testing": "^11.0.20",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.3",
+    "jest": "^29.7.0",
+    "standard-version": "^9.5.0",
+    "ts-jest": "^29.3.2",
+    "typescript": "^5.7.2"
+  },
+  "description": "client api for aws tools",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmeikle/qus-node-aws-clients.git"
+  },
+  "keywords": [
+    "node",
+    "nestjs",
+    "qus",
+    "aws client tools"
+  ],
+  "author": "Dave Meikle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmeikle/qus-node-aws-clients/issues"
+  },
+  "homepage": "https://github.com/dmeikle/qus-node-aws-clients#readme"
+}
